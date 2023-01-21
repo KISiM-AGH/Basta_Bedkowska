@@ -6,6 +6,8 @@ import {createStyles, Flex, Group, Stack} from "@mantine/core";
 import {Word} from "./Word";
 import {simpleWord} from "../../types/simpleWord";
 import {getWord} from "../../features/gameFeatures/api";
+import { GameState } from "./GameState";
+import { ImageForm } from "./ImageForm";
 
 export const Content: FC = () => {
     return (
@@ -21,9 +23,10 @@ export const Content: FC = () => {
                     direction="row"
                     wrap="wrap"
                 >
-                    <KeyboardForm/>
+                    <ImageForm/>
                     <KeyboardForm/>
                 </Flex>
+                <GameState/>
             </Stack>
         </div>
     );
