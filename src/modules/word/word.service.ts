@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { Word } from './word';
 import { WordNotFoundException } from './word.exception';
+import { CreateBookDto } from './dto/create-word.dto';
 
 @Injectable()
 export class WordService {
@@ -20,8 +21,8 @@ export class WordService {
     return word;
   }
 
-  public create(wo: string): Word {
-    const word: Word = { word: wo, id: this.id };
+  public create(data: CreateBookDto): Word {
+    const word: Word = { ...data, id: this.id };
     this.id++;
     this.words.push(word);
     return word;

@@ -8,6 +8,7 @@ import {
   HttpCode,
 } from '@nestjs/common';
 import { WordService } from './word.service';
+import { CreateBookDto } from './dto/create-word.dto';
 
 @Controller('word')
 export class WordController {
@@ -24,8 +25,8 @@ export class WordController {
   }
 
   @Post()
-  createWord(@Body() body: any) {
-    return this.wordService.create(body.word);
+  createWord(@Body() body: CreateBookDto) {
+    return this.wordService.create(body);
   }
 
   @Delete(':id')
