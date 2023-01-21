@@ -1,4 +1,12 @@
-import { Body, Controller, Get, Param, Post, Delete } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Param,
+  Post,
+  Delete,
+  HttpCode,
+} from '@nestjs/common';
 import { WordService } from './word.service';
 
 @Controller('word')
@@ -21,6 +29,7 @@ export class WordController {
   }
 
   @Delete(':id')
+  @HttpCode(204)
   removeWord(@Param('id') id: number) {
     return this.wordService.remove(id);
   }
