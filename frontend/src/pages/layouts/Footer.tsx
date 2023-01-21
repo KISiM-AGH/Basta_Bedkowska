@@ -5,7 +5,7 @@ import classes from "./Footer.module.css";
 export const Footer: FC = () => {
     return (
         <div className={classes.footer}>
-            <text> Projekt zaliczeniowy - Magdalena Basta, Zuzanna Będkowska</text>
+             Projekt zaliczeniowy - Magdalena Basta, Zuzanna Będkowska
         </div>
     );
 };

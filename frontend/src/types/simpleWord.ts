@@ -1,6 +1,4 @@
-export interface Word {
+export interface simpleWord {
     word:       string;
-    category:   string;
-    definition: string;
     id:         number;
 }
