@@ -4,6 +4,7 @@ import classes from "./ImageForm.module.css";
 import {simpleWord} from "../../types/simpleWord";
 import {getWord} from "../../features/gameFeatures/api";
 import {Image, Title} from "@mantine/core";
+import image from "../../images/0.jpg"
 
 
 export const ImageForm: FC = () => {
@@ -12,7 +13,7 @@ export const ImageForm: FC = () => {
             <div className={classes.imageForm} style={{ width: 240, marginLeft: 'auto', marginRight: 'auto' }}>
                 <Image
                     radius="md"
-                    src="../../images/0.jpg"
+                    src={image}
                     alt="Random unsplash image"
                 />
             </div>
