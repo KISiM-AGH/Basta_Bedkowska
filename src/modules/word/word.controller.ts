@@ -1,7 +1,20 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  Query,
+  Res,
+  ParseIntPipe,
+} from '@nestjs/common';
 import { WordService } from './word.service';
 import { CreateWordDto } from './dto/create-word.dto';
 import { UpdateWordDto } from './dto/update-word.dto';
+import { FilterWordDto } from './dto/filter-word.dto';
+import { Response } from 'express';
 
 @Controller('word')
 export class WordController {
@@ -13,13 +26,22 @@ export class WordController {
   }
 
   @Get()
-  findAll() {
-    return this.wordService.findAll();
+  async findAll(
+    @Res({ passthrough: true }) res: Response,
+    @Query() filters: FilterWordDto,
+  ) {
+    const [words, count] = await this.wordService.findAll(filters);
+    res.set({
+      'w-total': count,
+      'w-limit': filters.limit,
+      'w-offset': filters.offset,
+    });
+    return words;
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.wordService.findOne(+id);
+  findOne(@Param('id', ParseIntPipe) id: number) {
+    return this.wordService.findOne(id);
   }
 
   @Patch(':id')
