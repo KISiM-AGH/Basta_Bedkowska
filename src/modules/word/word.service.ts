@@ -62,4 +62,8 @@ export class WordService {
     const word = await this.findOne(id);
     return this.prismaService.word.delete({ where: { id } });
   }
+
+  async getMaxID() {
+    return this.prismaService.word.count();
+  }
 }
