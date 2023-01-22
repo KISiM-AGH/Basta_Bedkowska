@@ -8,7 +8,6 @@ import {Word} from "./Word";
 export const Header: FC = () => {
     const buttonHandlerNewGame = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
-
         const button: HTMLButtonElement = event.currentTarget;
         window.location.reload();
         showNotification({
@@ -34,7 +33,6 @@ export const Header: FC = () => {
             <Group spacing={10}>
                 <button onClick={buttonHandlerNewGame} className={classes.button} name={"Nowa Gra"}>Nowa Gra</button>
                 <button onClick={buttonHandlerHint} className={classes.button} name={"Podpowiedź"}> Podpowiedź</button>
-
             </Group>
         </div>
     );
