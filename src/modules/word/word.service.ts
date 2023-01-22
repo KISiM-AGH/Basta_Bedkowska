@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreateWordDto } from './dto/create-word.dto';
 import { UpdateWordDto } from './dto/update-word.dto';
 import { PrismaService } from '../prisma/prisma.service';
@@ -37,18 +37,29 @@ export class WordService {
   }
 
   async findOne(id: number) {
-    return this.prismaService.word.findUnique({
+    const word = await this.prismaService.word.findUnique({
       where: {
         id: id,
       },
     });
+    if (!word) throw new NotFoundException('To słowo nie istnieje w bazie.');
+    return word;
   }
 
-  update(id: number, updateWordDto: UpdateWordDto) {
-    return `This action updates a #${id} word`;
+  async update(id: number, updateWordDto: UpdateWordDto) {
+    const word = await this.findOne(id);
+    return this.prismaService.word.update({
+      where: { id },
+      data: {
+        word: updateWordDto.word,
+        description: updateWordDto.description,
+        category: updateWordDto.category,
+      },
+    });
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} word`;
+  async remove(id: number) {
+    const word = await this.findOne(id);
+    return this.prismaService.word.delete({ where: { id } });
   }
 }

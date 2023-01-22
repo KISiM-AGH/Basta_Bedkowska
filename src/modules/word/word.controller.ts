@@ -3,12 +3,12 @@ import {
   Get,
   Post,
   Body,
-  Patch,
   Param,
   Delete,
   Query,
   Res,
   ParseIntPipe,
+  Put,
 } from '@nestjs/common';
 import { WordService } from './word.service';
 import { CreateWordDto } from './dto/create-word.dto';
@@ -44,13 +44,16 @@ export class WordController {
     return this.wordService.findOne(id);
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateWordDto: UpdateWordDto) {
-    return this.wordService.update(+id, updateWordDto);
+  @Put(':id')
+  update(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() updateWordDto: UpdateWordDto,
+  ) {
+    return this.wordService.update(id, updateWordDto);
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.wordService.remove(+id);
+  remove(@Param('id', ParseIntPipe) id: number) {
+    return this.wordService.remove(id);
   }
 }
