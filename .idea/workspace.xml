@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="edycja guzika - dodanie handlera i zmiana wyglądu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674413961612</updated>
-      <workItem from="1674413964877" duration="4761000" />
+      <workItem from="1674413964877" duration="7276000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -121,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674414661870</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="edycja guzika - dodanie handlera i zmiana wyglądu">
+      <created>1674419752580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674419752580</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi" />
+    <MESSAGE value="edycja guzika - dodanie handlera i zmiana wyglądu" />
+    <option name="LAST_COMMIT_MESSAGE" value="edycja guzika - dodanie handlera i zmiana wyglądu" />
   </component>
 </project>
