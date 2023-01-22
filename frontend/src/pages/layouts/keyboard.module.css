@@ -8,3 +8,13 @@
     text-align: center;
     background-color: white;
 }
+
+.button {
+    height: 40px;
+    width: 40px;
+    background: white;
+    color: deepskyblue;
+    cursor: pointer;
+    border-radius: 50%;
+    border-color: lightskyblue;
+}

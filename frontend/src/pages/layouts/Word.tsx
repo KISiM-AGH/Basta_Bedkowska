@@ -8,19 +8,24 @@ import {Title} from "@mantine/core";
 
 export const Word: FC = () => {
     const [sW, setSW] = React.useState<simpleWord>();
+    const [podpowiedz, setPodpowiedz] = useState('');
+    const [slowo, setSlowo] = useState('');
+    const [kategoria, setKategoria] = useState('');
     useEffect( () => {
         getWord().then((data) => setSW(data))
     }, [])
     return (
         <div>
             <div className={classes.word}>
-                Kategoria
+                Kategoria: {kategoria}
             </div>
             <div className={classes.word}>
-                slowo
+                Słowo: {slowo}
             </div>
             <div className={classes.hint}>
-                Podpowiedź
+                {podpowiedz !== ""
+                    ? `Podpowiedź: "${podpowiedz}"`
+                    : "Podpowiedź: "}
             </div>
         </div>
     );

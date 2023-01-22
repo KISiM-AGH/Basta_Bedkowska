@@ -7,10 +7,11 @@ import {Title} from "@mantine/core";
 
 
 export const GameState: FC = () => {
+    const [gameState, setGameState] = useState('0')
     return (
         <div>
             <div className={classes.word}>
-                Stan gry
+                Błędy: {gameState} z 10
             </div>
         </div>
     );

@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi" />
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="edycja guzika nowa gra - przeładowanie strony">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/GameState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/GameState.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/ImageForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/ImageForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -27,6 +56,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/zuzan/source/repos",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -34,6 +64,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zuzan\source\repos\Basta_Bedkowska\frontend\public" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.start">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/frontend/package.json" />
@@ -55,9 +90,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/backend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.start:debug" />
       </list>
     </recent_temporary>
@@ -70,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674413961612</updated>
-      <workItem from="1674413964877" duration="569000" />
+      <workItem from="1674413964877" duration="8304000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -86,7 +132,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674414477060</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
+      <created>1674414661870</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674414661870</updated>
+    </task>
+    <task id="LOCAL-00004" summary="edycja guzika - dodanie handlera i zmiana wyglądu">
+      <created>1674419752580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674419752580</updated>
+    </task>
+    <task id="LOCAL-00005" summary="edycja guzika nowa gra - przeładowanie strony">
+      <created>1674422481267</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674422481267</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +172,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi" />
+    <MESSAGE value="edycja guzika - dodanie handlera i zmiana wyglądu" />
+    <MESSAGE value="edycja guzika nowa gra - przeładowanie strony" />
+    <option name="LAST_COMMIT_MESSAGE" value="edycja guzika nowa gra - przeładowanie strony" />
   </component>
 </project>
