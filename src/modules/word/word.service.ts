@@ -1,59 +1,35 @@
 import { Injectable } from '@nestjs/common';
-import { Word } from './word';
-import { WordNotFoundException } from './word.exception';
-import { FilterWordDto } from './dto/filter-word.dto';
-import { Categories } from './categories';
 import { CreateWordDto } from './dto/create-word.dto';
+import { UpdateWordDto } from './dto/update-word.dto';
+import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
 export class WordService {
-  private words: Word[] = [];
-  private id = 0;
+  constructor(private readonly prismaService: PrismaService) {}
 
-  public get(query: FilterWordDto): Word[] {
-    const result: Word[] = [];
-    for (const word of this.words) {
-      let filter = true;
-      if (typeof query.word === 'string') {
-        filter = filter && word.word.toLowerCase().includes(word.word);
-        result.push(word);
-      }
-
-      if (
-        query.category === Categories.colours ||
-        query.category === Categories.animals ||
-        query.category === Categories.objects
-      ) {
-        result.push(word);
-      }
-    }
-    return result;
+  create(createWordDto: CreateWordDto) {
+    return this.prismaService.word.create({
+      data: {
+        word: createWordDto.word,
+        description: createWordDto.description,
+        category: createWordDto.category,
+      },
+    });
   }
 
-  public getById(id: number): Word | undefined {
-    const word = this.words.find((w) => w.id == id);
-
-    //Handle getting an element that does not exist
-    if (!word)
-      throw new WordNotFoundException('To słowo nie istnieje w bazie.');
-    return word;
+  findAll() {
+    return `This action returns all word`;
   }
 
-  public create(data: CreateWordDto): Word {
-    const word: Word = {
-      id: this.id,
-      word: data.word,
-      category: data.category,
-      description: data.description,
-    };
-    this.id++;
-    this.words.push(word);
-    return word;
+  findOne(id: number) {
+    return `This action returns a #${id} word`;
   }
 
-  public remove(id: number): void {
-    //Check if the word exists first
-    this.getById(id);
-    this.words = this.words.filter((w) => w.id != id);
+  update(id: number, updateWordDto: UpdateWordDto) {
+    return `This action updates a #${id} word`;
+  }
+
+  remove(id: number) {
+    return `This action removes a #${id} word`;
   }
 }

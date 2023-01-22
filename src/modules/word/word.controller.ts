@@ -1,40 +1,34 @@
-import {
-  Body,
-  Controller,
-  Get,
-  Param,
-  Post,
-  Delete,
-  HttpCode,
-  ParseIntPipe,
-  Query,
-} from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { WordService } from './word.service';
 import { CreateWordDto } from './dto/create-word.dto';
-import { FilterWordDto } from './dto/filter-word.dto';
+import { UpdateWordDto } from './dto/update-word.dto';
 
 @Controller('word')
 export class WordController {
   constructor(private readonly wordService: WordService) {}
 
+  @Post()
+  create(@Body() createWordDto: CreateWordDto) {
+    return this.wordService.create(createWordDto);
+  }
+
   @Get()
-  getWords(@Query() query: FilterWordDto) {
-    return this.wordService.get(query);
+  findAll() {
+    return this.wordService.findAll();
   }
 
   @Get(':id')
-  getWord(@Param('id', ParseIntPipe) id: number) {
-    return this.wordService.getById(id);
+  findOne(@Param('id') id: string) {
+    return this.wordService.findOne(+id);
   }
 
-  @Post()
-  createWord(@Body() body: CreateWordDto) {
-    return this.wordService.create(body);
+  @Patch(':id')
+  update(@Param('id') id: string, @Body() updateWordDto: UpdateWordDto) {
+    return this.wordService.update(+id, updateWordDto);
   }
 
   @Delete(':id')
-  @HttpCode(204)
-  removeWord(@Param('id', ParseIntPipe) id: number) {
-    return this.wordService.remove(id);
+  remove(@Param('id') id: string) {
+    return this.wordService.remove(+id);
   }
 }
