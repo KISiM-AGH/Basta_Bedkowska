@@ -15,7 +15,7 @@ export class GameService {
 
   async checkIfContains(id: number, l: UpdateGameStateDto) {
     const word = await this.wordService.findOne(id);
-    let currentWord: string = '';
+    let currentWord = '';
 
     if (word.word.includes(l.letter)) {
       for (let i = 0; i < word.word.length; i++) {
