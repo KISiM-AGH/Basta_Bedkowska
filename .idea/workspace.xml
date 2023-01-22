@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi" />
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -27,6 +43,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/zuzan/source/repos",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -55,9 +72,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/backend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.start:debug" />
       </list>
     </recent_temporary>
@@ -70,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674413961612</updated>
-      <workItem from="1674413964877" duration="569000" />
+      <workItem from="1674413964877" duration="4761000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -86,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674414477060</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
+      <created>1674414661870</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674414661870</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
