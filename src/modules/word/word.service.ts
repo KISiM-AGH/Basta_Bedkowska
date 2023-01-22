@@ -1,35 +1,69 @@
-import { Injectable } from '@nestjs/common';
-import { Word } from './word';
-import { WordNotFoundException } from './word.exception';
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { CreateWordDto } from './dto/create-word.dto';
+import { UpdateWordDto } from './dto/update-word.dto';
+import { PrismaService } from '../prisma/prisma.service';
+import { FilterWordDto } from './dto/filter-word.dto';
+import { WordWhereInput } from 'prisma';
 
 @Injectable()
 export class WordService {
-  private words: Word[] = [];
-  private id = 0;
+  constructor(private readonly prismaService: PrismaService) {}
 
-  public get(): Word[] {
-    return this.words;
+  create(createWordDto: CreateWordDto) {
+    return this.prismaService.word.create({
+      data: {
+        word: createWordDto.word,
+        description: createWordDto.description,
+        category: createWordDto.category,
+      },
+    });
   }
 
-  public getById(id: number): Word | undefined {
-    const word = this.words.find((w) => w.id == id);
+  async findAll(filters: FilterWordDto) {
+    const where: WordWhereInput = {
+      word: {
+        contains: filters.word,
+      },
+    };
+    const words = this.prismaService.word.findMany({
+      where,
+      skip: filters.offset,
+      take: filters.limit,
+    });
 
-    //Handle getting an element that does not exist
-    if (!word)
-      throw new WordNotFoundException('To słowo nie istnieje w bazie.');
+    const count = this.prismaService.word.count({ where });
+
+    return Promise.all([words, count]);
+  }
+
+  async findOne(id: number) {
+    const word = await this.prismaService.word.findUnique({
+      where: {
+        id: id,
+      },
+    });
+    if (!word) throw new NotFoundException('To słowo nie istnieje w bazie.');
     return word;
   }
 
-  public create(wo: string): Word {
-    const word: Word = { word: wo, id: this.id };
-    this.id++;
-    this.words.push(word);
-    return word;
+  async update(id: number, updateWordDto: UpdateWordDto) {
+    const word = await this.findOne(id);
+    return this.prismaService.word.update({
+      where: { id },
+      data: {
+        word: updateWordDto.word,
+        description: updateWordDto.description,
+        category: updateWordDto.category,
+      },
+    });
   }
 
-  public remove(id: number): void {
-    //Check if the word exists first
-    this.getById(id);
-    this.words = this.words.filter((w) => w.id != id);
+  async remove(id: number) {
+    const word = await this.findOne(id);
+    return this.prismaService.word.delete({ where: { id } });
+  }
+
+  async getMaxID() {
+    return this.prismaService.word.count();
   }
 }
