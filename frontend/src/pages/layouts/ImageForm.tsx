@@ -14,7 +14,7 @@ export const ImageForm: FC = () => {
                 <Image
                     radius="md"
                     src={image}
-                    alt="Random unsplash image"
+                    alt="WISIELEC"
                 />
             </div>
         </div>

@@ -7,6 +7,10 @@ import {Title} from "@mantine/core";
 
 
 export const Word: FC = () => {
+    const [sW, setSW] = React.useState<simpleWord>();
+    useEffect( () => {
+        getWord().then((data) => setSW(data))
+    }, [])
     return (
         <div>
             <div className={classes.word}>
