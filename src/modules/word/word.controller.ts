@@ -6,32 +6,35 @@ import {
   Post,
   Delete,
   HttpCode,
+  ParseIntPipe,
+  Query,
 } from '@nestjs/common';
 import { WordService } from './word.service';
-import { CreateBookDto } from './dto/create-word.dto';
+import { CreateWordDto } from './dto/create-word.dto';
+import { FilterWordDto } from './dto/filter-word.dto';
 
 @Controller('word')
 export class WordController {
   constructor(private readonly wordService: WordService) {}
 
   @Get()
-  getWords() {
-    return this.wordService.get();
+  getWords(@Query() query: FilterWordDto) {
+    return this.wordService.get(query);
   }
 
   @Get(':id')
-  getWord(@Param('id') id: number) {
+  getWord(@Param('id', ParseIntPipe) id: number) {
     return this.wordService.getById(id);
   }
 
   @Post()
-  createWord(@Body() body: CreateBookDto) {
+  createWord(@Body() body: CreateWordDto) {
     return this.wordService.create(body);
   }
 
   @Delete(':id')
   @HttpCode(204)
-  removeWord(@Param('id') id: number) {
+  removeWord(@Param('id', ParseIntPipe) id: number) {
     return this.wordService.remove(id);
   }
 }

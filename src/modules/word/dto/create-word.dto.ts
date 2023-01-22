@@ -1,13 +1,21 @@
 import { Categories } from '../categories';
-import { IsEnum, IsNotEmpty, IsString } from 'class-validator';
+import { IsEnum, IsNotEmpty, IsOptional, IsString } from 'class-validator';
+import { Transform } from 'class-transformer';
+import { sanitize } from 'isomorphic-dompurify';
 
-export class CreateBookDto {
+export class CreateWordDto {
   @IsString()
   @IsNotEmpty()
+  @Transform(({ value }: { value: string }) =>
+    sanitize(value, { USE_PROFILES: { html: false } }),
+  )
   word: string;
+
   @IsString()
-  @IsNotEmpty()
-  description: string;
+  @IsOptional()
+  description?: string;
+
   @IsEnum(Categories)
+  @IsNotEmpty()
   category: Categories;
 }
