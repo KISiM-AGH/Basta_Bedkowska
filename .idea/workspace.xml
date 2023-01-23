@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="bazusia naprawiona">
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="bazusia naprawiona i próby poprawienia puta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/dev.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +132,7 @@
       <workItem from="1674413964877" duration="16444000" />
       <workItem from="1674473048509" duration="375000" />
       <workItem from="1674473439417" duration="665000" />
-      <workItem from="1674478190977" duration="5285000" />
+      <workItem from="1674478190977" duration="5854000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -199,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674478986714</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="bazusia naprawiona i próby poprawienia puta">
+      <created>1674491007571</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674491007571</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +229,7 @@
     <MESSAGE value="dodanie jako takiej obsługi frontu (naciskanie guziczków etc)" />
     <MESSAGE value="usunięcie niepotrzebnych plików" />
     <MESSAGE value="bazusia naprawiona" />
-    <option name="LAST_COMMIT_MESSAGE" value="bazusia naprawiona" />
+    <MESSAGE value="bazusia naprawiona i próby poprawienia puta" />
+    <option name="LAST_COMMIT_MESSAGE" value="bazusia naprawiona i próby poprawienia puta" />
   </component>
 </project>
