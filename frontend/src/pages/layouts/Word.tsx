@@ -11,9 +11,6 @@ export const Word: FC = () => {
     const [podpowiedz, setPodpowiedz] = useState('');
     const [slowo, setSlowo] = useState('');
     const [kategoria, setKategoria] = useState('');
-    useEffect( () => {
-        getWord().then((data) => setSW(data))
-    }, [])
     return (
         <div>
             <div className={classes.word}>

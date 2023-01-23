@@ -32,7 +32,7 @@ export const Header: FC = () => {
             <Title>WISIELEC</Title>
             <Group spacing={10}>
                 <button onClick={buttonHandlerNewGame} className={classes.button} name={"Nowa Gra"}>Nowa Gra</button>
-                <button onClick={buttonHandlerHint} className={classes.button} name={"Podpowiedź"}> Podpowiedź</button>
+
             </Group>
         </div>
     );

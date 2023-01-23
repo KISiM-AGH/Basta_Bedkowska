@@ -8,3 +8,56 @@
     background-color: white;
     margin: 10px 10px;
 }
+
+.word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.buttonHint {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    width: 200px;
+    background: deepskyblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 5%;
+    border-color: deepskyblue;
+}
+
+.imageForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.button {
+    height: 40px;
+    width: 40px;
+    background: white;
+    color: deepskyblue;
+    cursor: pointer;
+    border-radius: 50%;
+    border-color: lightskyblue;
+}

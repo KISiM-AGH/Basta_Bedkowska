@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="edycja guzika nowa gra - przeładowanie strony">
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="zmiana położenia obrazków, dodanie zmiennych obsługujących podpowiedź, słowo, kategorię i błędy">
+      <change afterPath="$PROJECT_DIR$/frontend/src/types/simpleGame.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/types/simpleLetter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/images/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/GameState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/GameState.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/gameFeatures/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/gameFeatures/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Routing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Routing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/ImageForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/ImageForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/types/simpleWord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/types/simpleWord.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -116,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674413961612</updated>
-      <workItem from="1674413964877" duration="8304000" />
+      <workItem from="1674413964877" duration="13851000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -153,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674422481267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="zmiana położenia obrazków, dodanie zmiennych obsługujących podpowiedź, słowo, kategorię i błędy">
+      <created>1674423641198</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674423641198</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +177,7 @@
     <MESSAGE value="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi" />
     <MESSAGE value="edycja guzika - dodanie handlera i zmiana wyglądu" />
     <MESSAGE value="edycja guzika nowa gra - przeładowanie strony" />
-    <option name="LAST_COMMIT_MESSAGE" value="edycja guzika nowa gra - przeładowanie strony" />
+    <MESSAGE value="zmiana położenia obrazków, dodanie zmiennych obsługujących podpowiedź, słowo, kategorię i błędy" />
+    <option name="LAST_COMMIT_MESSAGE" value="zmiana położenia obrazków, dodanie zmiennych obsługujących podpowiedź, słowo, kategorię i błędy" />
   </component>
 </project>

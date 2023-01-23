@@ -1,4 +1,6 @@
 export interface simpleWord {
-    word:       string;
-    id:         number;
+    id:          number;
+    word:        string;
+    description: string;
+    category:    string;
 }
