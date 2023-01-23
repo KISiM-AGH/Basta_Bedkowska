@@ -153,8 +153,8 @@ export const Content: FC = () => {
                 </Flex>
                 <div>
                     <div className={classes.word}>
-                        {gameState === " "
-                            ? `"${gameState}"`
+                        {gameState === "wygrana" || gameState === "przegrana"
+                            ? `${gameState}`
                             : `Błędy: ${mistakes} z 10 `}
                     </div>
                 </div>
