@@ -15,31 +15,41 @@ export const Content: FC = () => {
         category: ""
     });
     const [sG, setSG] = useState<simpleGame>( {
+        id: 1,
         mistakes: "",
         gameState: "",
-        word: ""
+        word: "",
+        wordID: 1
     });
-    const [chosenLetter, setChosenLetter] = useState<simpleLetter>({letter:""})
     const [podpowiedz, setPodpowiedz] = useState('');
     const [slowo, setSlowo] = useState('');
     const [kategoria, setKategoria] = useState('');
     const [mistakes, setMistakes] = useState('0');
     const [gameState, setGameState] = useState('')
     const [wordID, setWordID] = useState(0);
-    let imageSource = "images/"+mistakes+".jpg";
+    const [imageSource, setImageSource] = useState("images/"+mistakes+".jpg");
+    const isEmptyString = (data: string): boolean => data.trim().length == 0;
     useEffect(() => {
-      getWord().then((data) => setSW(data));
-      setKategoria(() => sW.category);
-      setWordID(() => sW.id)
-    }, []);
+        getWord().then((data) => {
+            setSW(data)
+            setKategoria(() => sW.category);
+            setSlowo(() => sW.word);
+            setWordID(() => sW.id);
+            /*showNotification({
+                color: 'green',
+                title: 'id slowa: ',
+                message: sW.id
+            })*/
+        })
+    }, [sW.category, sW.id, sW.word]);
 
     const buttonHandlerHint = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
         const button: HTMLButtonElement = event.currentTarget;
         button.style.backgroundColor = 'lightgray';
         button.setAttribute('disabled', '');
-        setPodpowiedz(() => button.name)
-        //setPodpowiedz(() => sW.word);
+
+        setPodpowiedz(() => sW.description);
         showNotification({
             color: 'green',
             title: 'button clicked: ',
@@ -52,16 +62,20 @@ export const Content: FC = () => {
         const button: HTMLButtonElement = event.currentTarget;
         button.style.backgroundColor = 'lightgray';
         button.setAttribute('disabled', '');
-        chosenLetter.letter=button.name;
-        setPodpowiedz((dane => chosenLetter.letter));
+        const chosenLetter: simpleLetter = {
+            letter: button.name
+        }
         checkLetter(wordID, chosenLetter).then((data) => setSG(data));
-        //setSlowo(() => sG.word);
-        //setMistakes(() => sG.mistakes);
-        //setGameState(() => sG.gameState);
+        setSlowo(() => sG.word);
+        setMistakes(() => sG.mistakes);
+        setImageSource(() => "images/" + sG.mistakes + ".jpg")
+        setGameState(() => sG.gameState);
+        setGameState(() => "");
+        setImageSource(() => "images/" + sG.mistakes + ".jpg");
         showNotification({
             color: 'green',
             title: 'button clicked: ',
-            message: button.name
+            message: sG.word
         })
     };
     return (
@@ -77,7 +91,7 @@ export const Content: FC = () => {
                     <button onClick={buttonHandlerHint} className={classes.buttonHint} name={"Podpowiedź"}> Podpowiedź</button>
                     <div className={classes.hint}>
                         {podpowiedz !== ""
-                            ? `"${podpowiedz}"`
+                            ? `${podpowiedz}`
                             : " "}
                     </div>
                 </div>
@@ -144,7 +158,7 @@ export const Content: FC = () => {
                 </Flex>
                 <div>
                     <div className={classes.word}>
-                        {gameState !== ""
+                        {gameState === " "
                             ? `"${gameState}"`
                             : `Błędy: ${mistakes} z 10 `}
                     </div>
