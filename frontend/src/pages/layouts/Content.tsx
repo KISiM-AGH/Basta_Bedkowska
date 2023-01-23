@@ -104,7 +104,7 @@ export const Content: FC = () => {
                             <Image
                                 radius="md"
                                 src={imageSource}
-                                alt="WISIELEC"
+                                alt={"KONIEC GRY!"}
                             />
                         </div>
                     </div>
