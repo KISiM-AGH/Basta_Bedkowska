@@ -2,7 +2,6 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 import { PrismaService } from './modules/prisma/prisma.service';
-import { SimpleGame } from './modules/game/simple.game';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

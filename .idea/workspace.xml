@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="Added seeding the Word table;&#10;Added GameState table;&#10;Edited chooseWord and checkIfContains functions;">
-      <change afterPath="$PROJECT_DIR$/backend/prisma/migrations/20230123145843_init/migration.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prisma/migrations/20230123153128_init/migration.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prisma/seed.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/modules/game/dto/create-game-state.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/767e6c74-ccea-4b4d-b10e-d41a5509cf42.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/767e6c74-ccea-4b4d-b10e-d41a5509cf42.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a869cbb-2a5b-40a5-8921-203564a51a03.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/dev.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/dev.db-journal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/migrations/20230123113558_init/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/schema.prisma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/dto/update-game-state.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/dto/update-game-state.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game-state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/simple.game.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/game.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/game.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/modules/word/word.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/word/word.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +111,7 @@
       <workItem from="1674473439417" duration="8340000" />
       <workItem from="1674484108058" duration="1740000" />
       <workItem from="1674485867476" duration="2044000" />
-      <workItem from="1674487935143" duration="3760000" />
+      <workItem from="1674487935143" duration="3860000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -201,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674478340330</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added seeding the Word table;&#10;Added GameState table;&#10;Edited chooseWord and checkIfContains functions;">
+      <created>1674491700061</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674491700061</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
