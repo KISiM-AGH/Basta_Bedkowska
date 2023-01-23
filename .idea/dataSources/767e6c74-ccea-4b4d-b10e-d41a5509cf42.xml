@@ -1313,7 +1313,7 @@
     <argument id="481" parent="165">
       <Position>1</Position>
     </argument>
-    <table id="482" parent="166" name="SimpleGame"/>
+    <table id="482" parent="166" name="GameState"/>
     <table id="483" parent="166" name="Word"/>
     <table id="484" parent="166" name="_prisma_migrations"/>
     <table id="485" parent="166" name="sqlite_master">
@@ -1323,7 +1323,6 @@
       <System>1</System>
     </table>
     <column id="487" parent="482" name="id">
-      <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>

@@ -76,12 +76,25 @@ export class GameService {
         status.gameState = 'wygrana';
       }
     } else {
-      status.mistakes = status.mistakes + 1;
+      status.mistakes += 1;
       if (status.mistakes == '10') {
         status.gameState = 'przegrana';
       }
     }
+    this.updateGameState(1, status);
     return status;
+  }
+
+  async updateGameState(id: number, update: CreateGameStateDto) {
+    const status = await this.getGameState(id);
+    return this.prismaService.gameState.update({
+      where: { id },
+      data: {
+        mistakes: update.mistakes,
+        gameState: update.gameState,
+        word: update.word,
+      },
+    });
   }
 
   async getGameState(id: number) {
@@ -92,5 +105,10 @@ export class GameService {
     });
     if (!status) throw new NotFoundException('W bazie nie ma gier.');
     return status;
+  }
+
+  async deleteGameState(id: number) {
+    const status = await this.getGameState(id);
+    return this.prismaService.gameState.delete({ where: { id } });
   }
 }

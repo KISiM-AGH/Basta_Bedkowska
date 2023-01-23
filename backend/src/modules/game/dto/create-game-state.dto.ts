@@ -1,12 +1,12 @@
-import { IsInt, IsNotEmpty, IsString } from 'class-validator';
+import { IsInt, IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
 export class CreateGameStateDto {
   @IsString()
   @IsNotEmpty()
   mistakes: string;
   @IsString()
-  @IsNotEmpty()
-  gameState: string;
+  @IsOptional()
+  gameState?: string;
   @IsString()
   @IsNotEmpty()
   word: string;

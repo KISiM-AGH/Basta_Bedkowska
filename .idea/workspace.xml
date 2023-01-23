@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="Edited main.ts">
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="Fixing db">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/767e6c74-ccea-4b4d-b10e-d41a5509cf42.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/767e6c74-ccea-4b4d-b10e-d41a5509cf42.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/prisma/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/dev.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/migrations/20230123153128_init/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/dto/create-game-state.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/dto/create-game-state.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/game.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/game.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,7 @@
       <workItem from="1674473439417" duration="8340000" />
       <workItem from="1674484108058" duration="1740000" />
       <workItem from="1674485867476" duration="2044000" />
-      <workItem from="1674487935143" duration="6115000" />
+      <workItem from="1674487935143" duration="8620000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -202,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674491812919</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixing db">
+      <created>1674495115028</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674495115028</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +237,7 @@
     <MESSAGE value="Database setup &amp; cors handling" />
     <MESSAGE value="Added seeding the Word table;&#10;Added GameState table;&#10;Edited chooseWord and checkIfContains functions;" />
     <MESSAGE value="Edited main.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited main.ts" />
+    <MESSAGE value="Fixing db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing db" />
   </component>
 </project>
