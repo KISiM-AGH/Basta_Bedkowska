@@ -12,7 +12,15 @@ datasource db {
 
 model Word {
   id          Int    @id @default(autoincrement())
-  word        String
+  word        String @unique
   description String
   category    String
+}
+
+model SimpleGame {
+  id        Int    @id @default(autoincrement())
+  mistakes  String
+  gameState String
+  word      String
+  wordID    Int
 }

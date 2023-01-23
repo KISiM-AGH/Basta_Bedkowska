@@ -20,7 +20,9 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "db:migrate": "prisma migrate dev --create-only --name",
     "db:update": "prisma migrate deploy && prisma generate",
-    "db:generate": "prisma generate"
+    "db:generate": "prisma generate",
+    "db:seed": "ts-node prisma/seed.ts",
+    "db:reset": "prisma migrate reset --force"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",

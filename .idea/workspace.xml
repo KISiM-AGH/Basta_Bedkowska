@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="Adding unversioned files &amp; recent changes">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="Added seeding the Word table;&#10;Added GameState table;&#10;Edited chooseWord and checkIfContains functions;">
+      <change afterPath="$PROJECT_DIR$/backend/prisma/migrations/20230123145843_init/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/prisma/migrations/20230123153128_init/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/prisma/seed.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/modules/game/dto/create-game-state.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/767e6c74-ccea-4b4d-b10e-d41a5509cf42.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/767e6c74-ccea-4b4d-b10e-d41a5509cf42.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a869cbb-2a5b-40a5-8921-203564a51a03.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/prisma/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/dev.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/prisma/dev.db-journal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/prisma/migrations/20230123113558_init/migration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/schema.prisma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/dto/update-game-state.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/dto/update-game-state.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game-state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/simple.game.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/game.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/game.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/modules/word/word.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/word/word.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +126,10 @@
       <updated>1674413961612</updated>
       <workItem from="1674413964877" duration="16444000" />
       <workItem from="1674473048509" duration="375000" />
-      <workItem from="1674473439417" duration="4669000" />
+      <workItem from="1674473439417" duration="8340000" />
+      <workItem from="1674484108058" duration="1740000" />
+      <workItem from="1674485867476" duration="2044000" />
+      <workItem from="1674487935143" duration="3760000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -176,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674474229096</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Database setup &amp; cors handling">
+      <created>1674478340330</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674478340330</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +226,8 @@
     <MESSAGE value="dodanie jako takiej obsługi frontu (naciskanie guziczków etc)" />
     <MESSAGE value="usunięcie niepotrzebnych plików" />
     <MESSAGE value="Adding unversioned files &amp; recent changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding unversioned files &amp; recent changes" />
+    <MESSAGE value="Database setup &amp; cors handling" />
+    <MESSAGE value="Added seeding the Word table;&#10;Added GameState table;&#10;Edited chooseWord and checkIfContains functions;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added seeding the Word table;&#10;Added GameState table;&#10;Edited chooseWord and checkIfContains functions;" />
   </component>
 </project>
