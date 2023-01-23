@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="dodanie jako takiej obsługi frontu (naciskanie guziczków etc)">
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="usunięcie niepotrzebnych plików">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/GamePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/GamePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/GameState.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Hint.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/ImageForm.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/ImageForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/gameFeatures/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/gameFeatures/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674413961612</updated>
-      <workItem from="1674413964877" duration="14141000" />
+      <workItem from="1674413964877" duration="16444000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -163,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674432888150</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="usunięcie niepotrzebnych plików">
+      <created>1674433263933</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674433263933</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +185,7 @@
     <MESSAGE value="edycja guzika nowa gra - przeładowanie strony" />
     <MESSAGE value="zmiana położenia obrazków, dodanie zmiennych obsługujących podpowiedź, słowo, kategorię i błędy" />
     <MESSAGE value="dodanie jako takiej obsługi frontu (naciskanie guziczków etc)" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie jako takiej obsługi frontu (naciskanie guziczków etc)" />
+    <MESSAGE value="usunięcie niepotrzebnych plików" />
+    <option name="LAST_COMMIT_MESSAGE" value="usunięcie niepotrzebnych plików" />
   </component>
 </project>

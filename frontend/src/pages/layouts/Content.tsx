@@ -5,31 +5,41 @@ import {simpleWord} from "../../types/simpleWord";
 import {checkLetter, getWord} from "../../features/gameFeatures/api";
 import {showNotification} from "@mantine/notifications";
 import {simpleGame} from "../../types/simpleGame";
+import {simpleLetter} from "../../types/simpleLetter";
 
 export const Content: FC = () => {
-    const [sW, setSW] = useState<simpleWord[]>([]);
-    const [sG, setSG] = useState<simpleGame>();
+    const [sW, setSW] = useState<simpleWord>({
+        word:"",
+        id:0,
+        description: "",
+        category: ""
+    });
+    const [sG, setSG] = useState<simpleGame>( {
+        mistakes: "",
+        gameState: "",
+        word: ""
+    });
+    const [chosenLetter, setChosenLetter] = useState<simpleLetter>({letter:""})
     const [podpowiedz, setPodpowiedz] = useState('');
     const [slowo, setSlowo] = useState('');
     const [kategoria, setKategoria] = useState('');
     const [mistakes, setMistakes] = useState('0');
     const [gameState, setGameState] = useState('')
-    const [chosenLetter, setChosenLeter] = useState("");
+    const [wordID, setWordID] = useState(0);
     let imageSource = "images/"+mistakes+".jpg";
-    /*useEffect(() => {
-      //getWord().then((data) => setSW(data));
-      //sW.map((simpleW) => {
-          //setPodpowiedz((dane) => simpleW.word);
-          //setKategoria((dane) => simpleW.category);
-      })
-    }, [])*/
+    useEffect(() => {
+      getWord().then((data) => setSW(data));
+      setKategoria(() => sW.category);
+      setWordID(() => sW.id)
+    }, []);
+
     const buttonHandlerHint = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
-
         const button: HTMLButtonElement = event.currentTarget;
         button.style.backgroundColor = 'lightgray';
         button.setAttribute('disabled', '');
-        setPodpowiedz((dane) => button.name);
+        setPodpowiedz(() => button.name)
+        //setPodpowiedz(() => sW.word);
         showNotification({
             color: 'green',
             title: 'button clicked: ',
@@ -42,12 +52,12 @@ export const Content: FC = () => {
         const button: HTMLButtonElement = event.currentTarget;
         button.style.backgroundColor = 'lightgray';
         button.setAttribute('disabled', '');
-        setChosenLeter((dane) => button.name);
-        setPodpowiedz((dane => button.name));
-        checkLetter(button.name).then((data) => setSG(data));
-        //setSlowo((dane) => sG.word);
-        //setMistakes((dane) => sG.mistakes);
-        //setGameState((dane) => sG.gameState;)
+        chosenLetter.letter=button.name;
+        setPodpowiedz((dane => chosenLetter.letter));
+        checkLetter(wordID, chosenLetter).then((data) => setSG(data));
+        //setSlowo(() => sG.word);
+        //setMistakes(() => sG.mistakes);
+        //setGameState(() => sG.gameState);
         showNotification({
             color: 'green',
             title: 'button clicked: ',
@@ -136,7 +146,7 @@ export const Content: FC = () => {
                     <div className={classes.word}>
                         {gameState !== ""
                             ? `"${gameState}"`
-                            : `Błędy: "${gameState}" z 10 `}
+                            : `Błędy: ${mistakes} z 10 `}
                     </div>
                 </div>
             </Stack>
