@@ -8,6 +8,7 @@ import {
 } from '@nestjs/common';
 import { GameService } from './game.service';
 import { UpdateGameStateDto } from './dto/update-game-state.dto';
+import { CreateGameStateDto } from './dto/create-game-state.dto';
 
 @Controller('game')
 export class GameController {
@@ -29,5 +30,10 @@ export class GameController {
     @Body() updateGameStateDto: UpdateGameStateDto,
   ) {
     return this.gameService.checkIfContains(id, updateGameStateDto);
+  }
+
+  @Put(':reset')
+  newGame(@Body() createGameStateDto: CreateGameStateDto) {
+    return this.gameService.createNewGame(createGameStateDto);
   }
 }

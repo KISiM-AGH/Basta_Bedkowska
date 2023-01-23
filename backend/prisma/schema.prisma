@@ -17,7 +17,7 @@ model Word {
   category    String
 }
 
-model SimpleGame {
+model GameState {
   id        Int    @id @default(autoincrement())
   mistakes  String
   gameState String
