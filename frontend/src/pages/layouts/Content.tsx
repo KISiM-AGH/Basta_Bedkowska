@@ -66,19 +66,12 @@ export const Content: FC = () => {
             letter: button.name
         }
         checkLetter(chosenLetter).then((data) => {
-            setSG(data)
-            setSlowo(() => sG.word);
-            setMistakes(() => sG.mistakes);
-            setImageSource(() => "images/" + sG.mistakes + ".jpg")
-            setGameState(() => sG.gameState);
-            setGameState(() => "");
-            setImageSource(() => "images/" + sG.mistakes + ".jpg");
+            setSlowo(() => data.word);
+            setMistakes(() => data.mistakes);
+            setImageSource(() => "images/" + data.mistakes + ".jpg")
+            setGameState(() => data.gameState);
+            setImageSource(() => "images/" + data.mistakes + ".jpg");
         });
-        showNotification({
-            color: 'green',
-            title: 'button clicked: ',
-            message: sG.word
-        })
     };
     return (
         <div className={classes.content}>
