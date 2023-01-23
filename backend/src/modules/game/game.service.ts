@@ -76,7 +76,9 @@ export class GameService {
         status.gameState = 'wygrana';
       }
     } else {
-      status.mistakes += 1;
+      let int: number = +status.mistakes;
+      int = int + 1;
+      status.mistakes = String(int);
       if (status.mistakes == '10') {
         status.gameState = 'przegrana';
       }
