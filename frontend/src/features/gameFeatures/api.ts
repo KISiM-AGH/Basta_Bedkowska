@@ -5,9 +5,9 @@ import {simpleGame} from "../../types/simpleGame";
 import {simpleLetter} from "../../types/simpleLetter";
 
 export const getWord = async () => {
-    return await ky.get(`http://127.0.0.1:9000/api/game/random`).json<simpleWord>();
+    return ky.get(`http://127.0.0.1:9000/api/game/random`).json<simpleWord>();
 }
 
 export const checkLetter = async (letter : simpleLetter) => {
-    return await ky.put(`http://127.0.0.1:9000/api/game/update`, {json:letter}).json<simpleGame>();
+    return ky.put(`http://127.0.0.1:9000/api/game/update`, {json:letter}).json<simpleGame>();
 }
