@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="zmiana położenia obrazków, dodanie zmiennych obsługujących podpowiedź, słowo, kategorię i błędy">
-      <change afterPath="$PROJECT_DIR$/frontend/src/types/simpleGame.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/types/simpleLetter.ts" afterDir="false" />
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="dodanie jako takiej obsługi frontu (naciskanie guziczków etc)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/gameFeatures/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/gameFeatures/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Routing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Routing.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/GamePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/GamePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/GameState.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/ImageForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/ImageForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/types/simpleWord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/types/simpleWord.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Hint.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/ImageForm.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/ImageForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Word.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/keyboard.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674413961612</updated>
-      <workItem from="1674413964877" duration="13851000" />
+      <workItem from="1674413964877" duration="14141000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -156,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674423641198</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="dodanie jako takiej obsługi frontu (naciskanie guziczków etc)">
+      <created>1674432888150</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674432888150</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +185,7 @@
     <MESSAGE value="edycja guzika - dodanie handlera i zmiana wyglądu" />
     <MESSAGE value="edycja guzika nowa gra - przeładowanie strony" />
     <MESSAGE value="zmiana położenia obrazków, dodanie zmiennych obsługujących podpowiedź, słowo, kategorię i błędy" />
-    <option name="LAST_COMMIT_MESSAGE" value="zmiana położenia obrazków, dodanie zmiennych obsługujących podpowiedź, słowo, kategorię i błędy" />
+    <MESSAGE value="dodanie jako takiej obsługi frontu (naciskanie guziczków etc)" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie jako takiej obsługi frontu (naciskanie guziczków etc)" />
   </component>
 </project>
