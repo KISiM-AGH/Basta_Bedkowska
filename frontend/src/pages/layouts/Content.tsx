@@ -65,7 +65,7 @@ export const Content: FC = () => {
         const chosenLetter: simpleLetter = {
             letter: button.name
         }
-        checkLetter(wordID, chosenLetter).then((data) => setSG(data));
+        checkLetter(chosenLetter).then((data) => setSG(data));
         setSlowo(() => sG.word);
         setMistakes(() => sG.mistakes);
         setImageSource(() => "images/" + sG.mistakes + ".jpg")
