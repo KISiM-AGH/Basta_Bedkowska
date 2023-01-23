@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="usunięcie niepotrzebnych plików">
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="Adding unversioned files &amp; recent changes">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/767e6c74-ccea-4b4d-b10e-d41a5509cf42.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/767e6c74-ccea-4b4d-b10e-d41a5509cf42.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/migrations/20230122114957_init/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/modules/word/word.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/word/word.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +42,6 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/zuzan/source/repos",
     "list.type.of.created.stylesheet": "CSS",
@@ -117,7 +111,7 @@
       <updated>1674413961612</updated>
       <workItem from="1674413964877" duration="16444000" />
       <workItem from="1674473048509" duration="375000" />
-      <workItem from="1674473439417" duration="665000" />
+      <workItem from="1674473439417" duration="4669000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -175,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674433263933</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding unversioned files &amp; recent changes">
+      <created>1674474229096</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674474229096</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +200,7 @@
     <MESSAGE value="zmiana położenia obrazków, dodanie zmiennych obsługujących podpowiedź, słowo, kategorię i błędy" />
     <MESSAGE value="dodanie jako takiej obsługi frontu (naciskanie guziczków etc)" />
     <MESSAGE value="usunięcie niepotrzebnych plików" />
-    <option name="LAST_COMMIT_MESSAGE" value="usunięcie niepotrzebnych plików" />
+    <MESSAGE value="Adding unversioned files &amp; recent changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding unversioned files &amp; recent changes" />
   </component>
 </project>
