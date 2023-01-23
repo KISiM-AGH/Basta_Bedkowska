@@ -3,7 +3,8 @@ import {
   Controller,
   Get,
   Param,
-  ParseIntPipe, Post,
+  ParseIntPipe,
+  Post,
   Put,
 } from '@nestjs/common';
 import { GameService } from './game.service';
@@ -19,12 +20,9 @@ export class GameController {
     return this.gameService.chooseWord();
   }
 
-  @Put(':id')
-  update(
-    @Param('id', ParseIntPipe) id: number,
-    @Body() updateGameStateDto: UpdateGameStateDto,
-  ) {
-    return this.gameService.checkIfContains(id, updateGameStateDto);
+  @Put(':update')
+  update(@Body() updateGameStateDto: UpdateGameStateDto) {
+    return this.gameService.checkIfContains(updateGameStateDto);
   }
 
   @Post(':reset')

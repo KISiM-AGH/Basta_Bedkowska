@@ -36,18 +36,20 @@ export class GameService {
     }
     chosen.word = temp;
     const newGame = new CreateGameStateDto('0', '', chosen.word, chosenID);
-
+    await this.createNewGame(newGame);
     return chosen;
   }
 
-  async checkIfContains(id: number, l: UpdateGameStateDto) {
-    const word = await this.wordService.findOne(id);
-    const status: CreateGameStateDto = await this.getGameState(1);
+  async checkIfContains(l: UpdateGameStateDto) {
+    const nr: number = await this.getMaxID();
+    const status: CreateGameStateDto = await this.getGameState(nr);
+    const chosen = await this.wordService.findOne(status.wordID);
+    const word: string = chosen.word;
     let currentWord = '';
     let flag = false;
-    if (word.word.includes(l.letter)) {
-      for (let i = 0; i < word.word.length; i++) {
-        if (word.word.charAt(i) === l.letter) {
+    if (word.includes(l.letter)) {
+      for (let i = 0; i < word.length + 1; i++) {
+        if (word.charAt(i) === l.letter) {
           currentWord += l.letter;
           flag = true;
         } else {
@@ -83,7 +85,7 @@ export class GameService {
         status.gameState = 'przegrana';
       }
     }
-    this.updateGameState(1, status);
+    await this.updateGameState(nr, status);
     return status;
   }
 
@@ -112,5 +114,9 @@ export class GameService {
   async deleteGameState(id: number) {
     const status = await this.getGameState(id);
     return this.prismaService.gameState.delete({ where: { id } });
+  }
+
+  async getMaxID() {
+    return this.prismaService.gameState.count();
   }
 }

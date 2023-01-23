@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="Fixing db">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/767e6c74-ccea-4b4d-b10e-d41a5509cf42.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/767e6c74-ccea-4b4d-b10e-d41a5509cf42.xml" afterDir="false" />
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="Fixed chooseWord">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/prisma/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/dev.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/dto/create-game-state.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/dto/create-game-state.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/game.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/game.service.ts" afterDir="false" />
     </list>
@@ -50,7 +48,7 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\Studia\\5 semestr\\II\\Basta_Bedkowska\\backend\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "D:\\Studia\\5 semestr\\II\\Basta_Bedkowska\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -116,7 +114,8 @@
       <workItem from="1674473439417" duration="8340000" />
       <workItem from="1674484108058" duration="1740000" />
       <workItem from="1674485867476" duration="2044000" />
-      <workItem from="1674487935143" duration="8620000" />
+      <workItem from="1674487935143" duration="9390000" />
+      <workItem from="1674498606426" duration="4899000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -209,7 +208,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674495115028</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fixed gameState updating;&#10;Changed db migrations;">
+      <created>1674497567581</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674497567581</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fixed mistake count;">
+      <created>1674499991548</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674499991548</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fixed chooseWord">
+      <created>1674501478927</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674501478927</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +258,9 @@
     <MESSAGE value="Added seeding the Word table;&#10;Added GameState table;&#10;Edited chooseWord and checkIfContains functions;" />
     <MESSAGE value="Edited main.ts" />
     <MESSAGE value="Fixing db" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing db" />
+    <MESSAGE value="Fixed gameState updating;&#10;Changed db migrations;" />
+    <MESSAGE value="Fixed mistake count;" />
+    <MESSAGE value="Fixed chooseWord" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed chooseWord" />
   </component>
 </project>
