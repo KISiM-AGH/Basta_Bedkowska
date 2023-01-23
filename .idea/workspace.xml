@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="Fixed chooseWord">
+    <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="dodanie await i zmiana endpointa do put">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/dev.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/game.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/modules/game/game.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/game/game.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,26 +35,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/zuzan/source/repos&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Studia\\5 semestr\\II\\Basta_Bedkowska\\frontend\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/zuzan/source/repos",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\zuzan\\source\\repos\\Basta_Bedkowska\\frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\zuzan\source\repos\Basta_Bedkowska\frontend\public" />
@@ -116,6 +114,7 @@
       <workItem from="1674485867476" duration="2044000" />
       <workItem from="1674487935143" duration="9390000" />
       <workItem from="1674498606426" duration="4899000" />
+      <workItem from="1674505832110" duration="792000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
@@ -229,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674501478927</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="dodanie await i zmiana endpointa do put">
+      <created>1674506147332</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674506147332</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +267,7 @@
     <MESSAGE value="Fixed gameState updating;&#10;Changed db migrations;" />
     <MESSAGE value="Fixed mistake count;" />
     <MESSAGE value="Fixed chooseWord" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed chooseWord" />
+    <MESSAGE value="dodanie await i zmiana endpointa do put" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie await i zmiana endpointa do put" />
   </component>
 </project>
