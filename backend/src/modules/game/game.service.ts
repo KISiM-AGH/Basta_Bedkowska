@@ -37,7 +37,7 @@ export class GameService {
     chosen.word = temp;
     const newGame = new CreateGameStateDto('0', '', chosen.word, chosenID);
 
-    return this.createNewGame(newGame);
+    return chosen;
   }
 
   async checkIfContains(id: number, l: UpdateGameStateDto) {
