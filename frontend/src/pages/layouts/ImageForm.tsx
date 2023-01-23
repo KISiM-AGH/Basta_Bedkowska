@@ -8,12 +8,14 @@ import {Image, Title} from "@mantine/core";
 
 
 export const ImageForm: FC = () => {
+    const [imageNR, setImageNr] = useState("1")
+    let imageSource = "images/"+imageNR+".jpg";
     return (
         <div>
             <div className={classes.imageForm} style={{ width: 240, marginLeft: 'auto', marginRight: 'auto' }}>
                 <Image
                     radius="md"
-                    src="images/0.jpg"
+                    src={imageSource}
                     alt="WISIELEC"
                 />
             </div>

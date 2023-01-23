@@ -10,7 +10,7 @@ const publicRoutes = [//tablica mapujaca konkretny adres na dany komponent
         element: <Center/>, //wyswietlany komponent = tutaj akurat stylowanie
         children: [ //komponenty wewnatrz center = tutaj akurat wyswietlanie tych komponentow na srodku strony = wewnatrz center
             {
-                path: "/game", //adres
+                path: "/", //adres
                 element: <GamePage/> //wyswietlenie strony gry
             },
             {
