@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b0c6b933-07b9-4dd0-a9e2-aa980ffaddb3" name="Changes" comment="usunięcie niepotrzebnych plików">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/gameFeatures/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/gameFeatures/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/layouts/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/prisma/migrations/20230122114957_init/migration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/modules/word/word.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/modules/word/word.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +54,13 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\zuzan\\source\\repos\\Basta_Bedkowska\\backend\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "D:\\Studia\\5 semestr\\II\\Basta_Bedkowska\\backend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -105,6 +116,8 @@
       <option name="presentableId" value="Default" />
       <updated>1674413961612</updated>
       <workItem from="1674413964877" duration="16444000" />
+      <workItem from="1674473048509" duration="375000" />
+      <workItem from="1674473439417" duration="665000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie frontendu ręcznie i podzielenie frontu i backu na 2 katalogi">
       <created>1674414442249</created>
