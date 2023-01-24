@@ -101,11 +101,19 @@ export const Content: FC = () => {
                 >
                     <div>
                         <div className={classes.imageForm} style={{ width: 240, marginLeft: 'auto', marginRight: 'auto' }}>
-                            <Image
-                                radius="md"
-                                src={imageSource}
-                                alt={"KONIEC GRY!"}
-                            />
+                            {gameState === "wygrana" || gameState === "przegrana"
+                                ?
+                                <Image
+                                    radius="md"
+                                    src={'images/'+gameState+'.jpg'}
+                                    alt= {'images/'+gameState+'.jpg'}
+                                />
+                                : <Image
+                                    radius="md"
+                                    src={imageSource}
+                                    alt= {'images/'+gameState+'.jpg'}
+                                />}
+
                         </div>
                     </div>
                     <Flex className={classes.keyboard}
